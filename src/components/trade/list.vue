@@ -4,7 +4,7 @@
     <div class="cardDiv">
       <input type="hidden" id="select_card_no" value=""/>
       <div class="checkCard" v-on:click="showCardLayer">
-        <div class="fl"><label class="show_card_no">{{selectCardNo=='0'?'所有卡片':selectCardNo}}</label></div>
+        <div class="fl"><label class="show_card_no">{{selectCardNo=='0'?'所有卡片11111111111':selectCardNo}}</label></div>
         <div class="fr"><i class="fa fa-angle-down"></i></div>
         <div class="clear_f"></div>
       </div>
@@ -18,7 +18,7 @@
                   <div class="item item2" :class="{'check':selectCardNo==='0'}" v-on:click="selectCard('0')"><i class="fa fa-credit-card"></i><label>所有卡片</label>
                   </div>
                 </li>
-                <li v-for="(item,key) in cardList">
+                <li v-for="(key,item) in cardList">
                 <div class="item item2 " :class="{'check':selectCardNo===item.cardno}" v-on:click="selectCard(item.cardno)">
                 <i class="fa fa-credit-card"></i>
                 <label>{{item.cardno}}</label>
