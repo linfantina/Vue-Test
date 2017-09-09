@@ -1,0 +1,187 @@
+body{
+  background-color: #f2f2f4;
+  color: #333;
+}
+.page_index .news {
+  width: 100%;
+  background: #fefced;
+  padding: 7px 0;
+  height: 20px;
+}
+.page_index .news .left {
+  float: left;
+  width: 10%;
+  box-sizing: border-box;
+  padding: 0 0 0 3%;
+  margin-top: 2px;
+}
+.page_index .news .left i {
+  font-size: 16px;
+  color: #f46932;
+}
+.page_index .news > span {
+  display: inline-block;
+  color: #f46932;
+  font-size: 1.1em;
+  padding: 0 0 0 5px;
+  float: left;
+  width: 80%;
+  box-sizing: border-box;
+  margin-top: 3px;
+}
+.page_index .news .right {
+  float: right;
+  width: 10%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 2% 0 0;
+  margin-top: 2px;
+}
+.page_index .news .right i {
+  font-size: 14px;
+}
+.page_index .color_ffb124 {
+  color: #f46932;
+}
+.page_index .headDiv {
+  position: relative;
+  width: 100%;
+  /* min-height: 200px; */
+  color: #fff;
+  background: -webkit-linear-gradient(bottom, #2c2421, #3e3a39);
+  background: -o-linear-gradient(bottom, #2c2421, #3e3a39);
+  background: -moz-linear-gradient(bottom, #2c2421, #3e3a39);
+  background: linear-gradient(bottom, #2c2421, #3e3a39);
+}
+.page_index .headDiv .layer {
+  background: #1e82d2;
+  width: 100%;
+  padding: 23px 0;
+}
+.page_index .headDiv .layer .w25 {
+  width: 25%;
+  text-align: center;
+}
+.fl{float: left}
+.clear_f {
+  clear: both;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  _display: inherit;
+}
+.page_index .amountDiv{
+  background-color: white;
+}
+.page_index .amountDiv .all {
+  padding: 0 5%;
+}
+.page_index .amountDiv .all .allamount {
+  padding-top: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.page_index .amountDiv .all .allamount .text label {
+  font-weight: 600;
+}
+.page_index .amountDiv .all .detail {
+  padding: 15px 0;
+}
+.page_index .amountDiv .all .detail .amount {
+  width: 55%;
+}
+.page_index .amountDiv .all .detail .text {
+  font-family: "微软雅黑";
+  font-size: 1.2em;
+}
+.page_index .amountDiv .all .detail .money {
+  font-size: 1.2em;
+}
+.page_index .amountDiv .all .detail .score {
+  width: 45%;
+  text-align: right;
+  /* margin-left: 5%; */
+}
+.page_index .amountDiv .all .allamount .money {
+  font-family: '微软雅黑';
+  font-size: 2.3em;
+  text-align: center;
+  padding: 10px 0;
+}
+.h10 {
+  height: 10px;
+  overflow: hidden;
+  clear: both;
+}
+.page_index .last {
+  width: 90%;
+  background: #fff;
+  padding: 0px 5%;
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+}
+.page_index .last .top {
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+}
+.page_index .last .top .show {
+  margin-left: 10px;
+}
+.page_index .last .bottom {
+  padding: 10px 0;
+}
+.page_index .last .bottom .money {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 10px 0 0 0;
+  font-family: '微软雅黑';
+}
+.page_index .last .bottom .text {
+  color: #b5b5b5;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.page_index .last .top .show .time {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+}
+.page_index .content ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 20px;
+}
+.page_index .content ul li a .imgDiv {
+  text-align: center;
+}
+.page_index .content ul li a .imgDiv i {
+  font-size: 30px;
+}
+.page_index .bold {
+  font-weight: bold;
+}
+.page_index .headDiv .layer .imgDiv i {
+  font-size: 22px;
+}
+.page_index .headDiv .layer .text {
+  margin-top: 10px;
+}
+.page_index .content ul li a .title {
+  font-size: 1.1em;
+  line-height: 41px;
+}
+.page_index .color_478fd1 {
+  color: #478fd1;
+}
+.page_index .color_ffb21e {
+  color: #ffb21e;
+}
+.page_index .color_16a8a1 {
+  color: #16a8a1;
+}
+.page_index .color_6ab03d {
+  color: #6ab03d;
+}

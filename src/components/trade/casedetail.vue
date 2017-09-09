@@ -47,7 +47,7 @@
     },
     methods: {
       setNewsApi: function () {
-        api.JH_news('/trade/getcasedetail', 'type=top&key=123456')
+        api.JH_news('/trade/getCaseDetail', 'type=top&key=123456')
           .then(res => {
             this.detailModel = res.detailmodel
           })

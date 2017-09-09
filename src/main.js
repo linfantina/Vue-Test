@@ -4,6 +4,9 @@ import Vue from 'vue'
 import Mint from 'mint-ui'
 import App from './App'
 import router from './router'
+import 'mint-ui/lib/style.css'
+import './common/css/basic.css'
+import './common/font/iconfont.css'
 
 // // 引用API文件
 // import api from './api/index.js'
