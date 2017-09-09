@@ -33,7 +33,7 @@
     </div>
     <div class="h10"></div>
     <div class="record_list">
-      <ul v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="0">
+      <ul v-infinite-scroll="loadMore" infinite-scroll-disabled="listLoading" infinite-scroll-distance="10">
         <li v-for="(item,key) in tradeList" class='type1' v-on:click="showDetail(1,1,'2323','交易成功','')">
           <div class='fl imgDiv'>
             <i class='el el-store'></i>
@@ -66,11 +66,11 @@
   export default {
     data () {
       return {
-        allLoaded: false,
         tradeList: [],
         cardList: [],
         isShowCardLayer: false,
         isShowLoading: false,
+        listLoading: false,
         selectCardNo: '0'
       }
     },
@@ -113,14 +113,15 @@
       },
       loadMore () {
         this.isShowLoading = true
+        this.listLoading = true
         setTimeout(() => {
           api.JH_news('/trade/getTradeList', null)
           .then(res => {
             this.tradeList.push(...res.tradeList)
           })
           this.isShowLoading = false
-          console.log('加载完更多！！！')
-        }, 2500)
+          this.listLoading = false
+        }, 2000)
       }
     }
   }
