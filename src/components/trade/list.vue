@@ -52,6 +52,7 @@
           <div class='clear_f'></div>
         </li>
       </ul>
+      <span class="b_loading" v-if="isShowLoading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>&nbsp;加载中...</span>
     </div>
   </div>
 </template>
@@ -69,6 +70,7 @@
         tradeList: [],
         cardList: [],
         isShowCardLayer: false,
+        isShowLoading: false,
         selectCardNo: '0'
       }
     },
@@ -110,13 +112,13 @@
         this.getTradeList()
       },
       loadMore () {
-        this.loading = true
+        this.isShowLoading = true
         setTimeout(() => {
           api.JH_news('/trade/getTradeList', null)
           .then(res => {
             this.tradeList.push(...res.tradeList)
           })
-          this.loading = false
+          this.isShowLoading = false
           console.log('加载完更多！！！')
         }, 2500)
       }
